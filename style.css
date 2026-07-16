@@ -12,6 +12,11 @@ h1 {
     color: #0096FF;
     text-align: center;
     font-size: 3rem;
+
+.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    
 }
 
 /* Section titles */

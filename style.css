@@ -6,11 +6,11 @@ body {
 }
 
 h1 {
-    color: #00d9ff;
+    color: #0096FF;
 }
 
 h2 {
-    color: #66ff99;
+    color: #0096FF;
 }
 
 ul {
@@ -20,5 +20,5 @@ ul {
 }
 
 li {
-    margin: 8px 0;
+    margin: 40px 0;
 }

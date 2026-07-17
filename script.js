@@ -6,7 +6,7 @@ supabaseKey
 
 async function loadGlitches() {
 const { data, error } = await supabase
-.from("glitches")
+.from("Glitches")
 .select("*");
 
 if (error) {

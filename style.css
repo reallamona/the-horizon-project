@@ -76,3 +76,25 @@ section {
     border-radius: 15px;
     max-width: 900px;
 }
+
+/* Game folders */
+.game-folder {
+    background: #222;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: 2px solid #0096FF;
+    max-width: 900px;
+}
+
+/* Folder titles */
+.game-folder h3 {
+    margin-top: 0;
+    color: #0096FF;
+}
+
+/* Folder contents */
+.game-folder ul {
+    background: #1a1a1a;
+    border: 1px solid #444;
+}

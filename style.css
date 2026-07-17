@@ -21,7 +21,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Section titles */
+/* Main section titles */
 h2 {
     color: #00BF00;
     text-align: left;
@@ -31,8 +31,8 @@ h2 {
     margin: 30px auto 10px;
 }
 
-/* Glitch headings */
-h3, h4, h5, h6 {
+/* Game titles */
+h3 {
     color: #0096FF;
     max-width: 900px;
     margin: 25px auto 10px;
@@ -68,15 +68,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Content sections */
-section {
-    background: #4d3939;
-    padding: 20px;
-    margin: 25px auto;
-    border-radius: 15px;
-    max-width: 900px;
-}
-
 /* Game folders */
 .game-folder {
     background: #4d3939;
@@ -87,13 +78,7 @@ section {
     max-width: 900px;
 }
 
-/* Folder titles */
-.game-folder h3 {
-    margin-top: 0;
-    color: #0096FF;
-}
-
-/* Folder contents */
+/* Lists inside game folders */
 .game-folder ul {
     background: #2a2a2a;
     border: 1px solid #444;

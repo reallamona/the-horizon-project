@@ -4,9 +4,9 @@ supabaseUrl,
 supabaseKey
 );
 
-async function loadGlitches() {
+async function loadglitches() {
 const { data, error } = await supabase
-.from("Glitches")
+.from("glitches")
 .select("*");
 
 if (error) {
@@ -17,4 +17,4 @@ return;
 console.log(data);
 }
 
-loadGlitches();
+loadglitches();

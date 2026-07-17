@@ -22,13 +22,14 @@ h1 {
 /* Section titles */
 h2 {
     color: #00BF00;
+    text-align: left;
     border-bottom: 2px solid #00BF00;
     padding-bottom: 5px;
 }
 
 /* Paragraphs */
 p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 /* Lists */
@@ -45,18 +46,18 @@ li {
 
 /* Links */
 a {
-    color: #ADEBB3;
+    color: #4284ed;
     text-decoration: none;
 }
 
 a: hover {
-    color: #00FF99;
+    color: #4284ed;
     text-decoration: underline;
 }
 
 /* Content sections */
 section {
-    background: #222;
+    background: #4d3939;
     padding: 20px;
     margin: 25px auto;
     border-radius: 15px;

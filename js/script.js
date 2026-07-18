@@ -5,23 +5,27 @@ async function loadSection(id, file) {
     document.getElementById(id).innerHTML = content;
 }
 
-loadSection("leaderboards", "leaderboards.html");
-loadSection("community", "community.html");
-loadSection("games", "games.html");
+function setupToggleButton() {
+    const button = document.getElementById("toggleAll");
+    if (!button) return;
 
+    button.addEventListener("click", () => {
+        const folders = document.querySelectorAll(".game-folder");
+        const expand = button.textContent === "Expand All";
 
-const search = document.getElementById("search");
+        folders.forEach(folder => {
+            folder.open = expand;
+        });
 
-search.addEventListener("input", function () {
-    const filter = search.value.toLowerCase();
-
-    const items = document.querySelectorAll("li, .game-folder");
-
-    items.forEach(item => {
-        const text = item.textContent.toLowerCase();
-
-        item.style.display = text.includes(filter)
-            ? ""
-            : "none";
+        button.textContent = expand ? "Collapse All" : "Expand All";
     });
-});
+}
+async function init() {
+    await loadSection("leaderboards", "leaderboards.html");
+    await loadSection("community", "community.html");
+    await loadSection("games", "games.html");
+
+    setupToggleButton();
+}
+
+init();

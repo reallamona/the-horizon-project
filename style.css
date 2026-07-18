@@ -80,8 +80,6 @@ a:hover {
 
 /* Collapse all folders */
 #toggleAll {
-    display: block;
-    margin: 20px auto;
     padding: 10px 18px;
     font-size: 1rem;
     border: none;
@@ -89,6 +87,7 @@ a:hover {
     background: #0096FF;
     color: white;
     cursor: pointer;
+}
 }
 
 #toggleAll:hover {

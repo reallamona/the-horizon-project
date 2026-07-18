@@ -105,19 +105,6 @@ a:hover {
     color: white;
 }
 
-/* Games section header */
-.games-header {
-    max-width: 900px;
-    margin: 30px auto 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.games-header h2 {
-    margin: 0;
-}
-
 /* Games header with toggle button */
 .games-header {
     max-width: 900px;

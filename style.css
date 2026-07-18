@@ -87,6 +87,13 @@ a:hover {
     max-width: 900px;
 }
 
+/* Collapse all folder */
+#toggleAll {
+    margin-bottom: 1rem;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
 /* Collapsible folder titles */
 .game-folder summary {
     color: #0096FF;

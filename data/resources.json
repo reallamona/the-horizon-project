@@ -1,1 +1,12 @@
-
+[
+  {
+    "name": "HZD Leaderboards",
+    "url": "https://www.speedrun.com/hzd",
+    "category": "Speedrun"
+  },
+  {
+    "name": "HZD Interactive Map",
+    "url": "https://mapgenie.io/horizon-zero-dawn",
+    "category": "Map"
+  }
+]

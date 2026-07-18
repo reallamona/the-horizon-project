@@ -112,10 +112,14 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #00BF00;
+    padding-bottom: 5px;
 }
 
 .games-header h2 {
     margin: 0;
+    border: none;
+    padding: 0;
 }
 
 /* Expand/Collapse button */

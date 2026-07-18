@@ -27,3 +27,24 @@ search.addEventListener("input", function () {
         }
     });
 });
+
+fetch("data/resources.json")
+.then(response => response.json())
+.then(resources => {
+
+    const box = document.getElementById("resources");
+
+    resources.forEach(resource => {
+        box.innerHTML += `
+            <ul>
+                <li>
+                    <a href="${resource.url}" target="_blank">
+                        ${resource.name}
+                    </a>
+                    <p>${resource.category}</p>
+                </li>
+            </ul>
+        `;
+    });
+
+});

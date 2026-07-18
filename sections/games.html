@@ -98,8 +98,7 @@
     </ul>
 </details>
 
-
-
+JavaScript 
 <details class="game-folder">
     <summary>LEGO Horizon Adventures</summary>
 
@@ -115,6 +114,22 @@
         </li>
     </ul>
 </details>
+
+JavaScript - Folder Button
+<script>
+const button = document.getElementById("toggleAll");
+const folders = document.querySelectorAll(".game-folder");
+
+button.addEventListener("click", () => {
+    const expand = button.textContent === "Expand All";
+
+    folders.forEach(folder => {
+        folder.open = expand;
+    });
+
+    button.textContent = expand ? "Collapse All" : "Expand All";
+});
+</script>
 
 </body>
 </html>

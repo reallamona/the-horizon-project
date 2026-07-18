@@ -77,15 +77,6 @@ a:hover {
     border: 1px solid #444;
     max-width: 900px;
 }
-/* Game folders */
-.game-folder {
-    background: #4d3939;
-    padding: 20px;
-    margin: 25px auto;
-    border-radius: 15px;
-    border: 1px solid #444;
-    max-width: 900px;
-}
 
 /* Collapse all folder */
 #toggleAll {

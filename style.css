@@ -121,3 +121,16 @@ a:hover {
     background: #2a2a2a;
     color: white;
 }
+
+/* Games section header */
+.games-header {
+    max-width: 900px;
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games-header h2 {
+    margin: 0;
+}

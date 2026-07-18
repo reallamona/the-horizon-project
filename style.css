@@ -1,3 +1,7 @@
+/* =========================
+   Base Layout
+========================= */
+
 body {
     background-color: #1a1a1a;
     color: #f5f5f5;
@@ -7,21 +11,28 @@ body {
     line-height: 1.6;
 }
 
-/* Main title */
+
+/* =========================
+   Main Header
+========================= */
+
 h1 {
     color: #0096FF;
     text-align: center;
     font-size: 3rem;
 }
 
-/* Intro text */
 .intro {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-/* Main game section title */
+
+/* =========================
+   Section Titles
+========================= */
+
 h2 {
     color: #00BF00;
     text-align: left;
@@ -29,67 +40,17 @@ h2 {
     margin: 30px auto 10px;
 }
 
-/* Game titles */
 h3 {
     color: #0096FF;
     max-width: 900px;
     margin: 25px auto 10px;
 }
 
-/* Paragraphs */
-p {
-    font-size: 1.2rem;
-}
 
-/* Lists */
-ul {
-    background: #2a2a2a;
-    padding: 20px 40px;
-    border-radius: 15px;
-    border: 1px solid #444;
-    max-width: 820px;
-    margin: 15px auto;
-}
+/* =========================
+   Search Bar
+========================= */
 
-li {
-    margin: 12px 0;
-}
-
-/* Links */
-a {
-    color: #4284ed;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #00BF00;
-    text-decoration: underline;
-}
-
-/* Game folders */
-.game-folder {
-    background: #4d3939;
-    padding: 20px;
-    margin: 25px auto;
-    border-radius: 15px;
-    border: 1px solid #444;
-    max-width: 900px;
-}
-
-/* Collapsible folder titles */
-.game-folder summary {
-    color: #0096FF;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Lists inside game folders */
-.game-folder ul {
-    background: #2a2a2a;
-    border: 1px solid #444;
-    margin-top: 15px;
-}
 #search {
     display: block;
     width: 80%;
@@ -103,7 +64,11 @@ a:hover {
     color: white;
 }
 
-/* Games header with toggle button */
+
+/* =========================
+   Games Header
+========================= */
+
 .games-header {
     max-width: 900px;
     margin: 30px auto 10px;
@@ -116,11 +81,14 @@ a:hover {
 
 .games-header h2 {
     margin: 0;
-    border: none;
     padding: 0;
 }
 
-/* Expand/Collapse button */
+
+/* =========================
+   Expand / Collapse Button
+========================= */
+
 #toggleAll {
     padding: 10px 18px;
     font-size: 1rem;
@@ -133,4 +101,73 @@ a:hover {
 
 #toggleAll:hover {
     background: #00BF00;
+}
+
+
+/* =========================
+   Game Folders
+========================= */
+
+.game-folder {
+    background: #4d3939;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: 1px solid #444;
+    max-width: 900px;
+}
+
+.game-folder summary {
+    color: #0096FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================
+   Lists
+========================= */
+
+ul {
+    background: #2a2a2a;
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 1px solid #444;
+    max-width: 820px;
+    margin: 15px auto;
+}
+
+.game-folder ul {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    margin-top: 15px;
+}
+
+li {
+    margin: 12px 0;
+}
+
+
+/* =========================
+   Links
+========================= */
+
+a {
+    color: #4284ed;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00BF00;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Paragraphs
+========================= */
+
+p {
+    font-size: 1.2rem;
 }

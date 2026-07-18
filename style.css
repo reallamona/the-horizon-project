@@ -36,7 +36,9 @@ h1 {
 h2 {
     color: #00BF00;
     text-align: left;
+    border-bottom: 2px solid #00BF00;
     padding-bottom: 5px;
+    max-width: 900px;
     margin: 30px auto 10px;
 }
 

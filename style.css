@@ -20,11 +20,13 @@ h1 {
     color: #0096FF;
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 5px;
 }
 
 .intro {
     text-align: center;
     font-size: 1.2rem;
+    margin-top: 5px;
     margin-bottom: 30px;
 }
 

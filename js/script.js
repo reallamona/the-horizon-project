@@ -14,7 +14,6 @@ async function loadSection(id, file) {
     }
 }
 
-
 function setupToggleButton() {
     const gamesSection = document.getElementById("games");
     const button = gamesSection.querySelector("#toggleAll");
@@ -33,20 +32,20 @@ function setupToggleButton() {
     });
 }
 
-
+/* Init Loading */
 async function init() {
-    await loadSection("leaderboards", "leaderboards.html");
-    await loadSection("community", "community.html");
-    await loadSection("games", "games.html");
+    await Promise.all([
+        loadSection("leaderboards", "leaderboards.html"),
+        loadSection("community", "community.html"),
+        loadSection("games", "games.html")
+    ]);
 
     setupToggleButton();
 }
 
-
 init();
 
-
-// Search
+/* Search Code */
 const search = document.getElementById("search");
 
 search.addEventListener("input", function () {

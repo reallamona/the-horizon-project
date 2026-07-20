@@ -134,13 +134,21 @@ h3 {
    Lists
 ========================= */
 
+/* =========================
+   Lists
+========================= */
+
 ul {
-    background: #2a2a2a;
     padding: 20px 40px;
-    border-radius: 15px;
-    border: 1px solid #444;
     max-width: 820px;
     margin: 15px auto;
+}
+
+.game-folder ul,
+.resource-page ul {
+    background: #2a2a2a;
+    border-radius: 15px;
+    border: 1px solid #444;
 }
 
 .game-folder ul {

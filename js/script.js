@@ -17,8 +17,8 @@ async function loadSection(id, file) {
 /* Init Loading */
 async function init() {
     await Promise.all([
-        loadSection("leaderboards", "leaderboards.html"),
-        loadSection("community", "community.html"),
+        loadSection("featured", "featured.html"),
+        loadSection("speedrun-resources", "speedrun-resources.html"),
         loadSection("games", "games.html")
     ]);
 

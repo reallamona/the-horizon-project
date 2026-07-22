@@ -38,7 +38,6 @@ async function init() {
         loadSection("games", "games.html"),
         loadSection("speedrun-resources", "speedrun-resources.html"),
         loadSection("community-resources", "community-resources.html")
-
     ]);
 
     setupToggleButton();

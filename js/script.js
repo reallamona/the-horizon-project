@@ -52,13 +52,16 @@ const search = document.getElementById("search");
 search.addEventListener("input", function () {
     const filter = search.value.toLowerCase();
 
-    const items = document.querySelectorAll("li, .game-folder");
+    const games = document.querySelectorAll(".game-folder");
 
-    items.forEach(item => {
-        const text = item.textContent.toLowerCase();
+    games.forEach(game => {
+        const text = game.textContent.toLowerCase();
 
-        item.style.display = text.includes(filter)
-            ? ""
-            : "none";
+        if (text.includes(filter)) {
+            game.style.display = "";
+            game.open = true;
+        } else {
+            game.style.display = "none";
+        }
     });
 });

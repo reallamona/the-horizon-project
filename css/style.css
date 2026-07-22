@@ -129,6 +129,9 @@ h3 {
     cursor: pointer;
 }
 
+.game-folder h2 {
+    font-size: 1.3rem;
+}
 
 /* =========================
    Lists

@@ -1,1 +1,108 @@
+<div class="games-header">
 
+    <h2>Community Resources</h2>
+
+</div>
+
+
+<details class="game-folder">
+
+    <summary>Horizon Communities</summary>
+
+    <h2>Discord</h2>
+
+    <ul>
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Horizon Community Discord
+            </a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Horizon Speedrun Discord
+            </a>
+        </li>
+    </ul>
+
+
+    <h2>Forums & Discussion</h2>
+
+    <ul>
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Horizon Discussion Community
+            </a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Horizon Reddit Community
+            </a>
+        </li>
+    </ul>
+
+</details>
+
+
+<details class="game-folder">
+
+    <summary>Content Creators</summary>
+
+    <h2>YouTube</h2>
+
+    <ul>
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Horizon YouTube Creators
+            </a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Speedrun Videos
+            </a>
+        </li>
+    </ul>
+
+
+    <h2>Streaming</h2>
+
+    <ul>
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Horizon Twitch Channels
+            </a>
+        </li>
+    </ul>
+
+</details>
+
+
+<details class="game-folder">
+
+    <summary>Community Projects</summary>
+
+    <h2>Projects</h2>
+
+    <ul>
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Fan Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Research Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank" rel="noopener">
+                Community Databases
+            </a>
+        </li>
+    </ul>
+
+</details>

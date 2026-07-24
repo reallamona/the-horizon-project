@@ -19,7 +19,7 @@ body {
 ========================= */
 
 h1 {
-    color: #0096FF;
+    color: #ffffff;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 5px;
@@ -38,17 +38,17 @@ h1 {
 ========================= */
 
 h2 {
-    color: #00BF00;
+    color: #ffffff;
     text-align: left;
     font-size: 1.4rem;
-    border-bottom: 3px solid #00BF00;
+    border-bottom: 1px solid #333;
     padding-bottom: 10px;
     max-width: 900px;
     margin: 40px auto 15px;
 }
 
 h3 {
-    color: #0096FF;
+    color: #4da3ff;
     max-width: 900px;
     margin: 25px auto 10px;
 }
@@ -121,7 +121,7 @@ h3 {
     padding: 20px;
     margin: 25px auto;
     border-radius: 15px;
-    border: 1px solid #444;
+    border: 1px solid #303744;
     max-width: 900px;
 }
 
@@ -136,9 +136,6 @@ h3 {
     font-size: 1.3rem;
 }
 
-/* =========================
-   Lists
-========================= */
 
 /* =========================
    Lists
@@ -173,12 +170,12 @@ li {
 ========================= */
 
 a {
-    color: #4284ed;
+    color: #4da3ff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #00BF00;
+    color: #79baff;
     text-decoration: underline;
 }
 

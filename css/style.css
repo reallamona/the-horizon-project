@@ -153,7 +153,6 @@ ul {
     margin: 15px auto;
 }
 
-.game-folder ul,
 .resource-page ul {
     background: #2a2a2a;
     border-radius: 15px;
@@ -161,9 +160,12 @@ ul {
 }
 
 .game-folder ul {
-    background: #2a2a2a;
-    border: 1px solid #444;
-    margin-top: 15px;
+    background: #0f1115;
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    border-radius: 10px;
+    border: 1px solid #303744;
 }
 
 li {

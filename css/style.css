@@ -48,13 +48,14 @@ h2 {
 }
 
 .game-folder h2 {
+    text-align: left;
     max-width: none;
     margin: 30px 0 15px;
-    width: auto;
 }
 
 .game-folder h3 {
     color: #4da3ff;
+    text-align: left;
     margin: 25px 0 10px;
     max-width: none;
 }

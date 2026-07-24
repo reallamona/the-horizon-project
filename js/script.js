@@ -20,9 +20,10 @@ function setupToggleButtons() {
         const button = header.querySelector(".toggleAll");
         const section = header.nextElementSibling;
 
-        if (!button) return;
+        if (!button || !section) return;
 
         button.addEventListener("click", () => {
+
             const folders = section.querySelectorAll(".game-folder");
 
             const expand = button.textContent === "Expand All";

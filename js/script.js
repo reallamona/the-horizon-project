@@ -56,9 +56,11 @@ function setupToggleButtons() {
 }
 
 /* Search */
+
 function setupSearch() {
 
     const search = document.getElementById("search");
+    const noResults = document.getElementById("no-results");
 
     search.addEventListener("input", function () {
 
@@ -66,12 +68,15 @@ function setupSearch() {
 
         const folders = document.querySelectorAll(".game-folder");
 
+        let found = false;
+
         folders.forEach(folder => {
 
             const text = folder.textContent.toLowerCase();
 
             if (text.includes(filter)) {
                 folder.style.display = "";
+                found = true;
             } else {
                 folder.style.display = "none";
             }
@@ -79,6 +84,14 @@ function setupSearch() {
             if (filter === "") {
                 folder.open = false;
             }
+
+        });
+
+        noResults.style.display = found || filter === "" ? "none" : "block";
+
+    });
+
+}
 
         });
 

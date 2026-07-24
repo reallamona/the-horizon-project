@@ -33,11 +33,12 @@ function setupToggleButtons() {
     document.querySelectorAll(".section-header").forEach(header => {
 
         const button = header.querySelector(".toggleAll");
-        const section = button.parentElement.nextElementSibling;
 
-        if (!button || !section) return;
+        if (!button) return;
 
         button.addEventListener("click", () => {
+
+            const section = header.parentElement;
 
             const folders = section.querySelectorAll(".game-folder");
 

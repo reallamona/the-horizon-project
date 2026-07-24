@@ -18,7 +18,7 @@ function setupToggleButtons() {
     document.querySelectorAll(".section-header").forEach(header => {
 
         const button = header.querySelector(".toggleAll");
-        const section = header.nextElementSibling;
+        const section = button.parentElement.nextElementSibling;
 
         if (!button || !section) return;
 

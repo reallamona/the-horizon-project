@@ -46,7 +46,7 @@ async function init() {
         loadSection("community-resources", "community-resources.html")
     ]);
 
-    setupToggleButton();
+    setupToggleButtons();
 }
 
 init();

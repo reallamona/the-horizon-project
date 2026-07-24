@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* =========================
    Base Layout
 ========================= */
@@ -5,7 +7,7 @@
 body {
     background: #0f1115;
     color: #f5f5f5;
-    font-family: system-ui, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 40px;
     line-height: 1.6;
@@ -115,7 +117,7 @@ h3 {
 ========================= */
 
 .game-folder {
-    background: #4d3939;
+    background: #171a21;
     padding: 20px;
     margin: 25px auto;
     border-radius: 15px;

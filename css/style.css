@@ -150,12 +150,7 @@ ul {
     padding: 20px 40px;
     max-width: 820px;
     margin: 15px 0;
-}
 
-.resource-page ul {
-    background: #2a2a2a;
-    border-radius: 15px;
-    border: 1px solid #444;
 }
 
 .game-folder ul {
@@ -231,6 +226,13 @@ p {
     border: 1px solid #444;
 }
 
+.resource-page ul {
+    background: #2a2a2a;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 1px solid #444;
+
+} 
 
 .resource-page a {
     color: #4284ed;

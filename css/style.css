@@ -155,13 +155,11 @@ ul {
 }
 
 .game-folder ul {
-    background: transparent;
     margin-top: 20px;
     padding: 0;
-    margin-left: 0;
-    list-style: none;
-    border-radius: 10px;
-    border: 1px solid #303744;
+    border: none;
+    background: none;
+
 }
 
 li {

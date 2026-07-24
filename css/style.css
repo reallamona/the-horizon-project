@@ -149,6 +149,24 @@ h2 {
     cursor: pointer;
 }
 
+.resource-card {
+    background: #171a21;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #303744;
+}
+
+.resource-card:hover {
+    border-color: #4da3ff;
+}
+
+.resource-card summary {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 /* =========================
    Lists

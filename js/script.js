@@ -41,7 +41,7 @@ function setupToggleButtons() {
 
             const section = header.parentElement;
 
-            const folders = section.querySelectorAll(".resource-card, .game-folder");
+            const folders = section.querySelectorAll(".game-folder");
 
             const expand = button.textContent === "Expand All";
 

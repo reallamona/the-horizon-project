@@ -56,24 +56,32 @@ function setupToggleButtons() {
 }
 
 /* Search */
-const search = document.getElementById("search");
+function setupSearch() {
 
-search.addEventListener("input", function () {
-    const filter = search.value.toLowerCase();
+    const search = document.getElementById("search");
 
-    const games = document.querySelectorAll(".game-folder");
+    search.addEventListener("input", function () {
 
-    games.forEach(game => {
-        const text = game.textContent.toLowerCase();
+        const filter = search.value.toLowerCase();
 
-       if (text.includes(filter)) {
-            game.style.display = "";
-        } else {
-            game.style.display = "none";
-        }
+        const folders = document.querySelectorAll(".game-folder");
 
-        if (filter === "") {
-            game.open = false;
-        }
+        folders.forEach(folder => {
+
+            const text = folder.textContent.toLowerCase();
+
+            if (text.includes(filter)) {
+                folder.style.display = "";
+            } else {
+                folder.style.display = "none";
+            }
+
+            if (filter === "") {
+                folder.open = false;
+            }
+
+        });
+
     });
-});
+
+}

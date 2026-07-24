@@ -169,9 +169,18 @@ ul {
 }
 
 li {
-    margin: 12px 0;
+    list-style: none;
+    margin: 10px 0;
+    padding: 12px 15px;
+
+    background: #171a21;
+    border-radius: 8px;
+    border: 1px solid #303744;
 }
 
+li:hover {
+    border-color: #4da3ff;
+}
 
 /* =========================
    Links

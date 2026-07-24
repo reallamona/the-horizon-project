@@ -120,13 +120,12 @@ h3 {
     background: #171a21;
     max-width: 1000px;
 
-    margin: 25px auto;
+    margin: 25px 0;
     padding: 20px;
 
     border-radius: 12px;
     border: 1px solid #303744;
 }
-
 
 .game-folder:hover {
     border-color: #4da3ff;
@@ -150,7 +149,7 @@ h3 {
 ul {
     padding: 20px 40px;
     max-width: 820px;
-    margin: 15px auto;
+    margin: 15px 0;
 }
 
 .resource-page ul {

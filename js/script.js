@@ -24,6 +24,7 @@ async function init() {
     ]);
 
     setupToggleButtons();
+    setupSearch();
 }
 
 init();

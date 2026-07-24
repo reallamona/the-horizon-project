@@ -14,20 +14,26 @@ async function loadSection(id, file) {
     }
 }
 
-function setupToggleButton() {
-    const button = document.getElementById("toggleAll");
+function setupToggleButtons() {
+    document.querySelectorAll(".section-header").forEach(header => {
 
-    if (!button) return;
+        const button = header.querySelector(".toggleAll");
+        const section = header.nextElementSibling;
 
-    button.addEventListener("click", () => {
-        const folders = document.querySelectorAll(".game-folder");
-        const expand = button.textContent === "Expand All";
+        if (!button) return;
 
-        folders.forEach(folder => {
-            folder.open = expand;
+        button.addEventListener("click", () => {
+            const folders = section.querySelectorAll(".game-folder");
+
+            const expand = button.textContent === "Expand All";
+
+            folders.forEach(folder => {
+                folder.open = expand;
+            });
+
+            button.textContent = expand ? "Collapse All" : "Expand All";
         });
 
-        button.textContent = expand ? "Collapse All" : "Expand All";
     });
 }
 

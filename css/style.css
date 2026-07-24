@@ -50,11 +50,13 @@ h2 {
 .game-folder h2 {
     max-width: none;
     margin: 30px 0 15px;
+    width: auto;
 }
 
 .game-folder h3 {
     color: #4da3ff;
     margin: 25px 0 10px;
+    max-width: none;
 }
 
 
@@ -242,10 +244,4 @@ p {
 
 .resource-page a:hover {
     color: #00BF00;
-}
-
-.game-folder h2,
-.game-folder h3 {
-    margin-left: 0;
-    max-width: none;
 }

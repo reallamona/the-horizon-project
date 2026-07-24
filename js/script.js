@@ -65,11 +65,14 @@ search.addEventListener("input", function () {
     games.forEach(game => {
         const text = game.textContent.toLowerCase();
 
-        if (text.includes(filter)) {
+       if (text.includes(filter)) {
             game.style.display = "";
-            game.open = true;
         } else {
             game.style.display = "none";
+        }
+
+        if (filter === "") {
+            game.open = false;
         }
     });
 });

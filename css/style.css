@@ -47,10 +47,9 @@ h2 {
     margin: 40px 0 15px;
 }
 
-h3 {
+.game-folder h3 {
     color: #4da3ff;
-    max-width: 900px;
-    margin: 25px auto 10px;
+    margin: 25px 0 10px;
 }
 
 

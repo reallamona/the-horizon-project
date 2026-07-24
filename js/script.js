@@ -14,6 +14,21 @@ async function loadSection(id, file) {
     }
 }
 
+
+/* Load Sections */
+async function init() {
+    await Promise.all([
+        loadSection("featured", "featured.html"),
+        loadSection("games", "games.html"),
+        loadSection("speedrun-resources", "speedrun-resources.html"),
+    ]);
+
+    setupToggleButtons();
+}
+
+init();
+
+/* Expand / Collapse Buttons */
 function setupToggleButtons() {
     document.querySelectorAll(".section-header").forEach(header => {
 
@@ -38,20 +53,7 @@ function setupToggleButtons() {
     });
 }
 
-/* Init Loading */
-async function init() {
-    await Promise.all([
-        loadSection("featured", "featured.html"),
-        loadSection("games", "games.html"),
-        loadSection("speedrun-resources", "speedrun-resources.html"),
-    ]);
-
-    setupToggleButtons();
-}
-
-init();
-
-/* Search Code */
+/* Search */
 const search = document.getElementById("search");
 
 search.addEventListener("input", function () {

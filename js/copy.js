@@ -29,8 +29,15 @@ function addCopyButtons() {
     });
 }
 
+
 async function copyLink(url, button, message) {
+    const logo = button.parentElement.querySelector("a img");
+
     try {
+        if (logo) {
+            logo.classList.add("logo-hidden");
+        }
+
         await navigator.clipboard.writeText(url);
 
         message.classList.add("show");
@@ -38,8 +45,17 @@ async function copyLink(url, button, message) {
         clearTimeout(button.copyTimeout);
         button.copyTimeout = setTimeout(() => {
             message.classList.remove("show");
+
+            if (logo) {
+                logo.classList.remove("logo-hidden");
+            }
         }, 1500);
+
     } catch (error) {
         console.error("Failed to copy link:", error);
+
+        if (logo) {
+            logo.classList.remove("logo-hidden");
+        }
     }
 }

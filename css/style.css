@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 
 /* ========================================
    Design Tokens
@@ -285,7 +285,7 @@ a:hover {
 }
 
 /* ========================================
-   Copy Buttons
+   Copy Buttons & Feedback
 ======================================== */
 
 .copy-wrapper {
@@ -308,12 +308,15 @@ a:hover {
     padding: 0;
     background: transparent;
     border: none;
+    border-radius: var(--radius-small);
     cursor: pointer;
 }
 
 .copy-link img {
+    display: block;
     width: 16px;
     height: 16px;
+    border-radius: 0;
     filter: invert(1);
     opacity: 0.7;
     transition: opacity var(--transition);
@@ -322,10 +325,6 @@ a:hover {
 .copy-link:hover img {
     opacity: 1;
 }
-
-/* ========================================
-   Copy Feedback
-======================================== */
 
 .copy-message {
     display: none;
@@ -337,6 +336,7 @@ a:hover {
     color: var(--accent);
     font-size: 0.7rem;
     font-weight: 600;
+    line-height: 1;
     white-space: nowrap;
     pointer-events: none;
     z-index: 2;
@@ -346,7 +346,7 @@ a:hover {
     display: flex;
 }
 
-.copy-wrapper .copy-link.copy-success img {
+.copy-link.copy-success img {
     visibility: hidden;
 }
 

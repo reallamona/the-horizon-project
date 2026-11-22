@@ -1,9 +1,8 @@
 /* =========================
-   Page Updates
+   Page Update Dates
 ========================= */
 
 const pageUpdates = {
-
     "data/pages/home.json": "November 22, 2026",
     "data/pages/speedrunning.json": "November 22, 2026",
     "data/pages/community.json": "November 22, 2026",
@@ -18,7 +17,6 @@ const pageUpdates = {
     "data/games/lego-horizon-adventures.json": "November 22, 2026",
     "data/games/hunters-gathering.json": "November 22, 2026",
     "data/games/steel-frontiers.json": "November 22, 2026"
-
 };
 
 
@@ -27,19 +25,20 @@ const pageUpdates = {
 ========================= */
 
 function addLastUpdated(page) {
-
     const updated = document.querySelector(".updated");
 
-    if (!updated) return;
-
+    if (!updated) {
+        console.warn("Last-updated element .updated was not found.");
+        return;
+    }
 
     const update = pageUpdates[page];
 
-
-    if (update) {
-
-        updated.textContent = `Last Updated: ${update}`;
-
+    if (!update) {
+        console.warn("No update date configured for:", page);
+        updated.textContent = "";
+        return;
     }
 
+    updated.textContent = `Last Updated: ${update}`;
 }

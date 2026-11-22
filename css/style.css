@@ -314,6 +314,37 @@ a:hover {
 }
 
 /* ========================================
+   Copied Message
+======================================== */
+
+.resource-card a {
+    position: relative;
+}
+
+.copy-message {
+    display: none;
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.copy-message.show {
+    display: inline;
+}
+
+/* Hide logo while copying */
+
+.logo-hidden {
+    visibility: hidden;
+}
+
+/* ========================================
    Accessibility
 ======================================== */
 
@@ -372,34 +403,4 @@ summary:focus-visible {
     .game-folder {
         padding: var(--space-sm);
     }
-}
-
-
-/* Copied Message */
-
-.copy-message {
-    display: none;
-    position: absolute;
-    left: calc(100% + 8px);
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--accent);
-    font-size: 0.85rem;
-    white-space: nowrap;
-    pointer-events: none;
-}
-
-.copy-message.show {
-    display: inline;
-}
-
-
-.copy-message.show {
-    display: inline;
-}
-
-/* Hide logo while copying */
-
-.logo-hidden {
-    visibility: hidden;
 }

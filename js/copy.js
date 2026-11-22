@@ -39,12 +39,16 @@ async function copyLink(url, button, message) {
     try {
         await navigator.clipboard.writeText(url);
 
+        button.classList.add("copy-success");
         message.classList.add("show");
 
         clearTimeout(button.copyTimeout);
+
         button.copyTimeout = setTimeout(() => {
             message.classList.remove("show");
+            button.classList.remove("copy-success");
         }, 1500);
+
     } catch (error) {
         console.error("Failed to copy link:", error);
     }

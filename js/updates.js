@@ -4,20 +4,20 @@
 
 const pageUpdates = {
 
-    "data/pages/home.json": "August 4, 2026",
-    "data/pages/speedrunning.json": "August 2, 2026",
-    "data/pages/community.json": "August 2, 2026",
-    "data/pages/games.json": "August 2, 2026",
+    "data/pages/home.json": "November 22, 2026",
+    "data/pages/speedrunning.json": "November 22, 2026",
+    "data/pages/community.json": "November 22, 2026",
+    "data/pages/games.json": "November 22, 2026",
 
-    "data/games/horizon-zero-dawn.json": "August 2, 2026",
-    "data/games/frozen-wilds.json": "August 2, 2026",
-    "data/games/zero-dawn-remastered.json": "August 2, 2026",
-    "data/games/horizon-forbidden-west.json": "August 2, 2026",
-    "data/games/burning-shores.json": "August 2, 2026",
-    "data/games/call-of-the-mountain.json": "August 2, 2026",
-    "data/games/lego-horizon-adventures.json": "August 2, 2026",
-    "data/games/hunters-gathering.json": "August 2, 2026",
-    "data/games/steel-frontiers.json": "August 2, 2026"
+    "data/games/horizon-zero-dawn.json": "November 22, 2026",
+    "data/games/frozen-wilds.json": "November 22, 2026",
+    "data/games/zero-dawn-remastered.json": "November 22, 2026",
+    "data/games/horizon-forbidden-west.json": "November 22, 2026",
+    "data/games/burning-shores.json": "November 22, 2026",
+    "data/games/call-of-the-mountain.json": "November 22, 2026",
+    "data/games/lego-horizon-adventures.json": "November 22, 2026",
+    "data/games/hunters-gathering.json": "November 22, 2026",
+    "data/games/steel-frontiers.json": "November 22, 2026"
 
 };
 

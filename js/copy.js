@@ -12,16 +12,13 @@ function addCopyButtons() {
         button.className = "copy-link";
         button.type = "button";
         button.title = "Copy";
-        button.setAttribute("aria-label", "Copy link");
         button.dataset.url = link.href;
-
         button.innerHTML = `<img src="assets/copy.png" alt="">`;
 
         const message = document.createElement("span");
         message.className = "copy-message";
         message.textContent = "Copied!";
         message.setAttribute("role", "status");
-        message.setAttribute("aria-live", "polite");
 
         button.addEventListener("click", () => {
             copyLink(button.dataset.url, button, message);

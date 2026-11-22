@@ -387,3 +387,9 @@ summary:focus-visible {
 .copy-message.show {
     display: inline;
 }
+
+/* Hide logo while copying */
+
+.logo-hidden {
+    visibility: hidden;
+}

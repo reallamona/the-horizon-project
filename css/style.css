@@ -373,3 +373,13 @@ summary:focus-visible {
         padding: var(--space-sm);
     }
 }
+
+.copy-message {
+    display: none;
+    color: var(--accent);
+    font-size: 0.85rem;
+}
+
+.copy-message.show {
+    display: inline;
+}

@@ -284,69 +284,69 @@ a:hover {
     text-decoration: underline;
 }
 
-
 /* ========================================
-   Copied Message
+   Copy Buttons
 ======================================== */
 
 .copy-wrapper {
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+    width: 28px;
+    height: 28px;
 }
 
-.copy-message {
-    display: none;
-    position: absolute;
-    top: calc(100% + 4px);
-    right: 0;
-    color: var(--accent);
-    font-size: 0.85rem;
-    white-space: nowrap;
-    pointer-events: none;
-    z-index: 10;
+.copy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.copy-message.show {
-    display: inline;
+.copy-link img {
+    width: 16px;
+    height: 16px;
+    filter: invert(1);
+    opacity: 0.7;
+    transition: opacity var(--transition);
 }
 
-/* Hide logo while copying */
-
-.logo-hidden {
-    visibility: hidden;
+.copy-link:hover img {
+    opacity: 1;
 }
-
 
 /* ========================================
-   Copied Message
+   Copy Feedback
 ======================================== */
-
-.resource-card a {
-    position: relative;
-}
 
 .copy-message {
     display: none;
     position: absolute;
-    left: calc(100% + 8px);
-    top: 50%;
-    transform: translateY(-50%);
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
     color: var(--accent);
-    font-size: 0.85rem;
+    font-size: 0.7rem;
+    font-weight: 600;
     white-space: nowrap;
     pointer-events: none;
-    z-index: 10;
+    z-index: 2;
 }
 
 .copy-message.show {
-    display: inline;
+    display: flex;
 }
 
-/* Hide logo while copying */
-
-.logo-hidden {
+.copy-wrapper .copy-link.copy-success img {
     visibility: hidden;
 }
 

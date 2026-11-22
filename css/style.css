@@ -374,15 +374,25 @@ summary:focus-visible {
     }
 }
 
+
 /* Copied Message */
 
 .copy-message {
     display: none;
-    margin-left: 8px;
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
     color: var(--accent);
     font-size: 0.85rem;
     white-space: nowrap;
+    pointer-events: none;
 }
+
+.copy-message.show {
+    display: inline;
+}
+
 
 .copy-message.show {
     display: inline;
